@@ -5,21 +5,20 @@
  
  # MVP
  
--Homepage: presentar pagina
--Main Page: Aquí podrás consultar las localizaciones y obtener los datos
--FAQ: Pondre de donde vienen los datos y recomendare una web de homeopatia para los que no crean en el covid
--Signup: registro
--Login: sign in para los resgistrados
+
+-Main Page: Aquí podrás consultar las localizaciones y obtener los datos <br>
+-FAQ: Pondre de donde vienen los datos y recomendare una web de homeopatia para los que no crean en el covid<br>
+-Signup: registro<br>
+-Login: sign in para los resgistrados<br>
 
 ## Backlog ##
 
--meter un mapa que muestra los resultados al clicar un pais o pasar el raton por encima
--numero de defunciones y recuperaciones hasta la fecha.
+-Meter un mapa que muestra los resultados al clicar un pais o pasar el raton por encima <br>
+-Número de defunciones y recuperaciones hasta la fecha.
 
 ## Data Structure ##
-- **root/**
+- **covid/**
      - index.html
-     - web.html
      - faq.html
      - register.html
      - signin.html
