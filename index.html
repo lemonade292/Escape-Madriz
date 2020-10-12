@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8">
+  <title>Covid19</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
+  <header>
     
+    <nav> 
+      <div class="nav-container">
+        <a href="index.html"><img src="" alt="Logo" class="navbar-brand"></a>  
+      </div>
+      <ul class="nav-menu hide-menu" id="nav-menu">
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <section class="header-section">
+      <input placeholder="Introduzca una provincia" name="provincias"/>
+      <p id="info-provincia"></p>
+
+    </section>
+  </main>
+
+  <script src="scripts\covidApi.js"></script>
 </body>
+
 </html>
