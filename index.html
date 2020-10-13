@@ -17,22 +17,50 @@
         <a href="index.html"><img src="" alt="Logo" class="navbar-brand"></a>  
       </div>
       <ul class="nav-menu hide-menu" id="nav-menu">
-        <li><a href="signup.html">Sign Up</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a href="login.html">Index</a></li>
+        <li><a href="faq.html">faq</a></li>
       </ul>
     </nav>
 
     <section class="header-section">
-      <input placeholder="Introduzca una provincia" name="provincias"/>
-      
-      <label for="regions">Choose a region:</label>
+      <div>
+        <h2>Datos España</h2>
+        <p id="info-nacional">asd</p>
+      </div>
+      <div>
+        <h2>Escaping Madriz</h2>
+        
+        <form>
+        <label for="regions">Donde quieres huir?</label>
 
-      <select name="regions" id="regions">
-       
-      </select>
-
-      <p id="info-provincia"></p>
-
+        <select name="regions" id="regions">
+          <option value="andalucia">Andalucía</option>
+          <option value="aragon">Aragón</option>
+          <option value="asturias">Asturias</option>
+          <option value="baleares">Baleares</option>
+          <option value="canarias">Canarias</option>
+          <option value="cantabria">Cantabria</option>
+          <option value="castilla-la-mancha">Castilla-La Mancha</option>
+          <option value="castilla_y_leon">Castilla y León</option>
+          <option value="cataluna">Cataluña</option>
+          <option value="ceuta">Ceuta</option>
+          <option value="extremadura">Extremadura</option>
+          <option value="galicia">Galicia</option>
+          <option value="la_rioja">La Rioja</option>
+          <option value="madrid">Madrid</option>
+          <option value="murcia">Murcia</option>
+          <option value="melilla">Melilla</option>
+          <option value="navarra">Navarra</option>
+          <option value="pais_vasco">País Vasco</option>
+          <option value="c_valenciana">Valencia</option> 
+        </select>
+        <select name="sub-regions" id="sub-regions">
+          <option value=""></option>
+        </select>
+        <button type="submit" class="sub-button"  value="Submit">Submit</button>
+       </form>
+        <p id="info-comunidad"></p>
+    </div>
     </section>
   </main>
 
