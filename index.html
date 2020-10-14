@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Covid19</title>
+  <title>Escape Madriz</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/main.css">
@@ -14,26 +14,27 @@
     
     <nav> 
       <div class="nav-container">
-        <a href="index.html"><img src="" alt="Logo" class="navbar-brand"></a>  
+        <a href="index.html"><img src="assets\descarga-removebg-preview2-removebg-preview.png" alt="Logo" class="navbar-brand"></a>  
       </div>
       <ul class="nav-menu hide-menu" id="nav-menu">
         <li><a href="login.html">Index</a></li>
-        <li><a href="faq.html">faq</a></li>
+        <li><a href="faq.html">FAQS</a></li>
       </ul>
     </nav>
 
     <section class="header-section">
-      <div>
-        <h2>Datos España</h2>
+      <div class="div-index">
+        <h1>Datos España</h1>
         <p id="info-nacional">asd</p>
       </div>
-      <div>
-        <h2>Escaping Madriz</h2>
+      <div class="div-index">
+        <h1>Escaping Madriz</h1>
         
         <form>
         <label for="regions">Donde quieres huir?</label>
 
         <select name="regions" class="regions">
+          <option value="null">-</option>
           <option value="andalucia">Andalucía</option>
           <option value="aragon">Aragón</option>
           <option value="asturias">Asturias</option>
@@ -54,8 +55,11 @@
           <option value="pais_vasco">País Vasco</option>
           <option value="c_valenciana">Valencia</option> 
         </select>
-        <select name="sub-regions" id="sub-regions">
-          <option value=""></option>
+        <select name="sub-regions" class="sub-regions">
+          <option value="null">-</option>
+
+
+
         </select>
         <button type="submit" class="sub-button"  value="Submit">Submit</button>
        </form>
