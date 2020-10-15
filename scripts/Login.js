@@ -44,7 +44,7 @@ class Login {
     }
     else {
       // si el inicio de sesión no se ha realizado correctamente
-      message.innerHTML = 'el email o/y password son incorectos';
+      message.innerHTML = 'el email y/o la contraseña son incorrectos';
     }
 
     this.messageContainer.appendChild(message);
