@@ -5,35 +5,50 @@ const getData = async (event) => {
   event.preventDefault()
 
   var regions = document.querySelector('.regions').value;
-  
+  var subRegions = document.querySelector('.sub-regions').value
   var log = document.querySelector('#info-comunidad');
-  let buscarSubRegions = `https://api.covid19tracking.narrativa.com/api/countries/spain/regions/${regions}/sub_regions`
-  var covidApi = `https://api.covid19tracking.narrativa.com/api/2020-10-10/country/spain/region/${regions}`
-  //var covidApiSubRegions = `https://api.covid19tracking.narrativa.com/api/2020-10-12/country/spain/region/${regions}/sub_region/${sub_region}`
+ 
+  var covidApi = `https://api.covid19tracking.narrativa.com/api/2020-10-12/country/spain/region/${regions}`
+  var subRegionsApi = `https://api.covid19tracking.narrativa.com/api/2020-10-12/country/spain/region/${regions}/sub_region/${subRegions}`
   
+  //'PARA EL CONTROL Z'
   
-  
- //if(r){
+ if(subRegions === 'null'){
   const responseCovid = await fetch(covidApi)
   
   const postData = await responseCovid.json()
   
   let data = Object.values(postData.dates)
   
-  data.map(data => console.log(data.countries.Spain.regions.map(data =>{
-  let dataConfirmed = data.today_confirmed;
-  
-  let dataDeaths = data.today_deaths;
+  data.map(data => data.countries.Spain.regions.map(data =>{
+    let dataConfirmed = data.today_confirmed;
     
-  if (regions === 'null') {return log.textContent = 'A ver maquina, selecciona un lugar.'}
-  else { if (dataConfirmed > 30000) {return log.textContent = `Casos confirmados:${dataConfirmed} Fallecidos:${dataDeaths}  Viajar ahí es un canteo. Hazte caso y busca garitos por otro lado.`}
-  else {return log.textContent = `Casos confirmados:${dataConfirmed} Fallecidos:${dataDeaths}   Te renta mazo. Estaría fetén buscarse una keli para unos días.`} 
-  } }
-/* } else if(r) {
-  console.log(data)
-  } */
-//}
-)))}
+    let dataDeaths = data.today_deaths;
+      
+    if (regions === 'null') {return log.textContent = 'A ver maquina, no te cantees mas y selecciona un lugar.'}
+    else if(regions === 'madrid') { return log.innerHTML = `Casos confirmados: ${dataConfirmed} <br><br> Fallecidos: ${dataDeaths} <br><br> A ver fiera, ir al 100mon de Sol no es salir de Madriz. Lo de los contagios aquí es una movida, pero podrás disfrutar del agüita del canal de la Isabel II que te renta mazo.`
+    } else { 
+      if (dataConfirmed > 30000) {return log.innerHTML = `Casos confirmados: ${dataConfirmed} <br><br>  Fallecidos: ${dataDeaths} <br><br> Viajar ahí es un canteo. Hazte caso y busca garitos por otro lado.`}
+    else {return log.innerHTML = `Casos confirmados: ${dataConfirmed} <br><br>  Fallecidos: ${dataDeaths}  <br><br> Te renta mazo. Estaría fetén buscarse una keli para unos días.`} 
+    }}))
+ } else  {
+   const responseSubRegions = await fetch(subRegionsApi)
+  
+  const postDataSubRegions = await responseSubRegions.json()
+  
+  let data = Object.values(postDataSubRegions.dates)
+  
+  data.map(data => data.countries.Spain.regions.map(data => data.sub_regions.map( data => {
+    
+    let dataConfirmed = data.today_confirmed;
+    let dataDeaths = data.today_deaths;
+      
+    if (dataConfirmed > 15000) {return log.innerHTML = `Casos confirmados: ${dataConfirmed}<br><br> Viajar ahí es un canteo. Hazte caso y busca garitos por otro lado.`}
+    else {return log.innerHTML = `Casos confirmados: ${dataConfirmed} <br><br> Te renta mazo. Estaría fetén buscarse una keli para unos días.`} 
+    }))) 
+  } 
+
+}
   
 const getSubregions = async (event) => {
   
@@ -51,8 +66,6 @@ const getSubregions = async (event) => {
     option.value = idSubregions
     option.innerHTML = nameSubregions
     optionId.appendChild(option) 
-    
-    //return console.log(idSubregions) 
   
 }))
 
@@ -63,5 +76,6 @@ subButton.addEventListener('click', getData)
 
 var selectRegion = document.querySelector('.regions')
 selectRegion.addEventListener('change', getSubregions)
-// Option 
-// llamada
+
+
+

@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Escape Madriz</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -16,51 +18,56 @@
       <div class="nav-container">
         <a href="index.html"><img src="assets\descarga-removebg-preview2-removebg-preview.png" alt="Logo" class="navbar-brand"></a>  
       </div>
+      <div class="p-navbar">
+        <p>Escape <br>Madriz</p>
+      </div>
       <ul class="nav-menu hide-menu" id="nav-menu">
-        <li><a href="login.html">Index</a></li>
+        <li><a href="login.html">Home</a></li>
         <li><a href="faq.html">FAQS</a></li>
       </ul>
     </nav>
 
+    <div class="img-div"></div>
+
     <section class="header-section">
-      <div class="div-index">
-        <h1>Datos España</h1>
-        <p id="info-nacional">asd</p>
+      <div Class="titulo-div">
+        <h1>Escape Madriz</h1>
       </div>
       <div class="div-index">
-        <h1>Escaping Madriz</h1>
         
-        <form>
-        <label for="regions">Donde quieres huir?</label>
-
-        <select name="regions" class="regions">
-          <option value="null">-</option>
-          <option value="andalucia">Andalucía</option>
-          <option value="aragon">Aragón</option>
-          <option value="asturias">Asturias</option>
-          <option value="baleares">Baleares</option>
-          <option value="canarias">Canarias</option>
-          <option value="cantabria">Cantabria</option>
-          <option value="castilla-la-mancha">Castilla-La Mancha</option>
-          <option value="castilla_y_leon">Castilla y León</option>
-          <option value="cataluna">Cataluña</option>
-          <option value="ceuta">Ceuta</option>
-          <option value="extremadura">Extremadura</option>
-          <option value="galicia">Galicia</option>
-          <option value="la_rioja">La Rioja</option>
-          <option value="madrid">Madrid</option>
-          <option value="murcia">Murcia</option>
-          <option value="melilla">Melilla</option>
-          <option value="navarra">Navarra</option>
-          <option value="pais_vasco">País Vasco</option>
-          <option value="c_valenciana">Valencia</option> 
-        </select>
-        <select name="sub-regions" class="sub-regions">
-          <option value="null">-</option>
-
-
-
-        </select>
+        <h3>A donde quieres huir?</h3>
+        <form class="covid-form">
+          <div>
+          <label for="regions">Comunidad Autónoma:</label>
+          <select name="regions" class="regions">
+            <option value="null">-</option>
+            <option value="andalucia">Andalucía</option>
+            <option value="aragon">Aragón</option>
+            <option value="asturias">Asturias</option>
+            <option value="baleares">Baleares</option>
+            <option value="canarias">Canarias</option>
+            <option value="cantabria">Cantabria</option>
+            <option value="castilla-la-mancha">Castilla-La Mancha</option>
+            <option value="castilla_y_leon">Castilla y León</option>
+            <option value="cataluna">Cataluña</option>
+            <option value="ceuta">Ceuta</option>
+            <option value="extremadura">Extremadura</option>
+            <option value="galicia">Galicia</option>
+            <option value="la_rioja">La Rioja</option>
+            <option value="madrid">Madrid</option>
+            <option value="murcia">Murcia</option>
+            <option value="melilla">Melilla</option>
+            <option value="navarra">Navarra</option>
+            <option value="pais_vasco">País Vasco</option>
+            <option value="c_valenciana">Valencia</option> 
+          </select>
+        </div>
+        <div>
+          <label for="sub-regions">Provincia:</label>
+          <select name="sub-regions" class="sub-regions">
+            <option value="null">-</option>
+          </select>
+      </div>
         <button type="submit" class="sub-button"  value="Submit">Submit</button>
        </form>
         <p id="info-comunidad"></p>

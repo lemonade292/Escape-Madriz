@@ -4,17 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Escape Madriz - Signup</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/burger-menu-icon.css">
+ 
 </head>
 
 <body>
   <header>
     <nav> 
       <div class="nav-container">
-        <a href="index.html"><img src="assets\descarga-removebg-preview.png" alt="Logo" class="navbar-brand"></a>  
+        <a href="index.html"><img src="assets\descarga-removebg-preview2-removebg-preview.png" alt="Logo" class="navbar-brand"></a>  
+      </div>
+      <div class="p-navbar">
+        <p>Escape <br>Madriz</p>
       </div>
       <ul class="nav-menu hide-menu" id="nav-menu">
         <li><a href="signup.html">Sign Up</a></li>
@@ -24,20 +28,20 @@
   </header>
 
   <main>
-    <section>
+    <section class="header-section">
       <h2>Sign Up</h2>
-      <div>
-        <form  action="">
-          <input type="text" id="name" placeholder="Name" />
+      <div class="signup-div">
+        <form class="signup-form" action="">
+          <input class="input-signup" type="text" id="name" placeholder="    Name" />
 
 
           <!-- hacemos el input email type text para que no moleste la validación -->
-          <input type="text" id="email" placeholder="Email" />
-          <input type="password" id="password" placeholder="****" />
-          <input type="password" id="repeat-password" placeholder="****" />
+          <input class="input-signup" type="text" id="email" placeholder="    Email" />
+          <input class="input-signup" type="password" id="password" placeholder="    ****" />
+          <input class="input-signup" type="password" id="repeat-password" placeholder="    ****" />
           
           <!-- El atríbuto `disabled` desactiva el botón. El botón será activado o desactivado por el método `checkButton` en Signup.js -->
-          <button type="submit" class="button" id="signup-button" disabled >Sign Up</button>
+          <button  class="button-signup" type="submit" class="button" id="signup-button" disabled >Sign Up</button>
         </form>
         <div class="message-container">
         </div>

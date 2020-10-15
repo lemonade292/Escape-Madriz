@@ -39,7 +39,7 @@ class Login {
     if (user) {
       // si el usuario inicia la sesion con exito
       // agrega la clase para cambiar el color y sobrescribir el estilo anterior
-      message.innerHTML = `hola, ${user.email}`;
+      message.innerHTML = `Hola, ${user.email}!`;
       message.classList.add("correct-message");
     }
     else {
