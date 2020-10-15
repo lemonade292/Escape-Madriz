@@ -8,8 +8,8 @@ const getData = async (event) => {
   var subRegions = document.querySelector('.sub-regions').value
   var log = document.querySelector('#info-comunidad');
  
-  var covidApi = `https://api.covid19tracking.narrativa.com/api/2020-10-12/country/spain/region/${regions}`
-  var subRegionsApi = `https://api.covid19tracking.narrativa.com/api/2020-10-12/country/spain/region/${regions}/sub_region/${subRegions}`
+  var covidApi = `https://api.covid19tracking.narrativa.com/api/2020-10-14/country/spain/region/${regions}`
+  var subRegionsApi = `https://api.covid19tracking.narrativa.com/api/2020-10-14/country/spain/region/${regions}/sub_region/${subRegions}`
   
   //'PARA EL CONTROL Z'
   

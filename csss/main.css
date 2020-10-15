@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-family: 'Roboto', sans-serif;
+	
 }
 ol, ul {
 	list-style: none;
@@ -65,7 +66,6 @@ nav{
     height: 100px;
     z-index: 999;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -86,15 +86,18 @@ nav .navbar-brand{
 }
 
 .nav-menu{
-    padding: 10px;
-    
+	
+	width: 90%;
+	display:flex;
+	justify-content: flex-end;
+
 }
 
 #nav-menu li {
     list-style: none;
     font-size: 18px;
 	display: inline-block;
-	padding: 0 40px;
+	padding-right: 5%;
 	
 
 	
@@ -107,8 +110,14 @@ nav .navbar-brand{
 }
 
 .p-navbar {
-	margin-right: 75%;
+	display:flex;
+	align-self: center;
 }
+
+.p-navbar p {
+	padding: 15px
+}
+
 
 
 
@@ -182,7 +191,12 @@ h1{
 }
 
 /* home */
-
+.titulo-div{
+	background: #66fcf1;
+    height: 300px;
+    margin-top: 0px;
+    
+}
 p {
 	color: white;
 	padding: 20px;
@@ -196,46 +210,35 @@ label {
 }
 
 .covid-form {
-	width: 50%;
-	padding-left: 25%;
+	width: 100%;
 	padding-top: 2%;
 	display: flex;
 	flex-direction: column;
+	align-items:center;
+	
 }
 
 .regions {
+border-radius: 10px;
 padding: 10px 0px;	
 margin: 10px 0px;
-border-radius: 10px;
-width: 50%
+width: 200px;
+margin-right: 270px;
 }
 
 .sub-regions {
 	border-radius: 10px;
 	padding: 10px 0px ;
-	margin: 10px 12.5% ;
-	width: 50%;
+	margin: 10px 0px;
+	width: 200px;
+	margin-right: 150px;
 }
-
-.regions option{
-	margin: 10px 0;
-	padding: 10px 0;
-	border-radius: 10px
-}
-
-.titulo-div{
-	background: #66fcf1;
-    height: 300px;
-    margin-top: 0px;
-    
-}
-
 
 
 .sub-button {
-	width: 10%;
+	width: 6%;
 	height: 35px;
-	margin:3% 45%;
+	margin:1% 50%;
 	border-radius:10px;
 	background-color: #66fcf1;
 	
@@ -280,3 +283,17 @@ width: 50%
 	width: 40%;
 }
 
+#info-comunidad {
+	display:flex;
+	justify-content: center;
+	background-color: #485766;
+	width: 40%;
+	margin: 3% 30%;
+	border-radius: 10px;
+	text-align: justify;
+	line-height: 1.6em;
+}
+
+#info-comunidad p {
+	
+}
