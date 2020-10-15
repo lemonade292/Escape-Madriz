@@ -1,4 +1,4 @@
-# para que sirve esto
+# Para que sirve esto
  
  Te gusta viajar aún en tiempos de pandemia? Quieres irte a Indonesia pero te daria susto enterarte ahí de las altas cifras de contagiados? 
  *He de pensar un nombre para esto * pero aquí podras averiguar previamente el numero de contagiados de cualquier lugar del mundo
@@ -43,7 +43,7 @@
 ### Git
 [Gihub Repo URL](https://github.com/lemonade292/covid)
 
-### Spoonacular
+### Covid Api
 [API Description](https://covid19tracking.narrativa.com/)
 
 [API Documentation](https://documenter.getpostman.com/view/10831675/SzYZ1eNY#9b5a1bbe-73dc-4872-a17c-12d24161550a)
