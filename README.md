@@ -25,11 +25,10 @@
      - **css/**
           - style.css
      - **js/**
-          - main.js
           - Signup.js
           - User.js
           - Validator.js
-          - home.js
+          - index.js
      - **assets/**
           - img/
           - fonts/
