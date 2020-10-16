@@ -27,7 +27,11 @@ const getData = async (event) => {
       
     if (regions === 'null') {return log.textContent = 'A ver maquina, no te cantees mas y selecciona un lugar.'}
     else if(regions === 'madrid') { return log.innerHTML = `Casos confirmados: ${dataConfirmed} <br><br> Fallecidos: ${dataDeaths} <br><br> A ver fiera, ir al 100mon de Sol no es salir de Madriz. Lo de los contagios aquí es una movida, pero podrás disfrutar del agüita del canal de la Isabel II que te renta mazo.`
+<<<<<<< HEAD
     } else if(regions === 'cataluna') { return log.innerHTML = `Casos confirmados: ${dataConfirmed} <br><br> Fallecidos: ${dataDeaths} <br><br> Para que vas a ir ahí figura? Si hablan mazo raro y tienen todos los garitos chapados.`
+=======
+    } else if(regions === 'cataluna') { return log.innerHTML = `Casos confirmados: ${dataConfirmed} <br><br> Fallecidos: ${dataDeaths} <br><br> Para que vas a ir ahí figura? Si hablan mazo raro y tienen todos los garitos chapados`
+>>>>>>> main
   } else { 
       if (dataConfirmed > 30000) {return log.innerHTML = `Casos confirmados: ${dataConfirmed} <br><br>  Fallecidos: ${dataDeaths} <br><br> Viajar ahí es un canteo. Hazte caso y busca garitos por otro lado.`}
     else {return log.innerHTML = `Casos confirmados: ${dataConfirmed} <br><br>  Fallecidos: ${dataDeaths}  <br><br> Te renta mazo. Estaría fetén buscarse una keli para unos días.`} 

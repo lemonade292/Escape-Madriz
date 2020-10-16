@@ -177,17 +177,60 @@ h1{
 
 
 /* FAQS */
+.faqparent{
+	display: flex;
+	flex-direction: column;
+
+}
 
 .faqs1 {
 	display: flex;
 	justify-content: flex-start;
-	padding: 2% 5%;
+	padding: 0 2%;
+	flex-direction: column ;
+	width: 50%;
+	background-color: #485766;
+	height: 200px;
+	margin: 10px 0px;
+	border-radius: 100px;
+}
+.faqs1 h3{
+	align-self: center;
+	text-transform: capitalize;
+}
+.faqs1 p {
+	text-align: justify;
+	padding: 0px;
+	line-height: 1.5em;
+	
 }
 
 .faqs2 {
 	display: flex;
-	justify-content: flex-end;
-	padding: 2% 5%;
+	justify-items: flex-end;
+	flex-direction: column ;
+	padding: 0 2%;
+	width: 50%;
+	background-color: #485766;
+	height: 200px;
+	align-self: flex-end;
+	border-radius: 100px;
+}
+.faqs2 h3{
+	align-self: center;
+	text-transform: capitalize;
+	
+}
+.faqs2 p {
+	text-align: justify;
+	padding: 0px;
+	line-height: 1.5em;
+	
+}
+
+
+.h2faq {
+	margin-bottom: 30px;
 }
 
 /* home */
@@ -238,8 +281,8 @@ margin-right: 270px;
 .sub-button {
 	width: 6%;
 	height: 35px;
-	margin:1% 50%;
 	border-radius:10px;
+	margin: 1% 0;
 	background-color: #66fcf1;
 	
 }
@@ -294,3 +337,128 @@ margin-right: 270px;
 	line-height: 1.6em;
 }
 
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 735px) {
+	.faqs1 p {
+		line-height: 1em;
+		font-size: 14px;
+		margin: 0 15%
+		
+	}
+	
+	.faqs1 h3{
+		font-size: 16px ;
+		margin: 0px 15%
+
+	}
+	.faqs1 {
+		width:90%;
+		align-self: center;
+		
+	}
+	.faqs2 p {
+		line-height: 1em;
+		font-size: 14px;
+		margin: 0 15%
+	}
+	
+	.faqs2 h3{
+		font-size: 16px ;
+		margin: 0px 15%
+
+	}
+	.faqs2 {
+		width:90%;
+		align-self: center;
+	}
+	h1 {
+		font-size: 48px;
+		margin: 0 25%;
+	}
+	.sub-button {
+		width: 20%;
+		align-self: center;
+	}
+
+	label{
+		font-size: 14px;
+		padding: 0px;
+	
+	}
+	.homeh3{
+		font-size: 17px;
+	}
+	#info-comunidad {
+		width:75%;
+		margin: 0 5%;
+		line-height: 1.2em;
+		text-align: center;
+	}
+	.subregionsdiv {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		
+	}
+	.regionsdiv{
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.regions {
+		margin:10px 0px;
+	
+		
+	}
+	.sub-regions{
+		margin:10px 0px;
+	}
+	
+	
+}
+
+
+@media screen and (min-width: 736px) and (max-width: 1049px){
+
+	.faqs1 p {
+		line-height: 1.2em;
+		font-size: 16px;
+		margin: 0 15%;
+	}
+	
+	.faqs1 h3{
+		font-size: 22px ;
+		margin: 0px 15%
+
+	}
+	.faqs2 p {
+		line-height: 1.2em;
+		font-size: 16px;
+		margin: 0 15%;
+	}
+	
+	.faqs2 h3{
+		font-size: 22px ;
+		margin: 0px 15%;
+
+	}
+
+	.sub-button {
+		width: 10%;
+		align-self: center;
+	}
+
+	h1 {
+		margin: 0 25%;
+		padding-bottom: 0px;
+	}
+	
+
+	
+}
+>>>>>>> main
